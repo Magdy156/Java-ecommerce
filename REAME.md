@@ -2,7 +2,7 @@
 -----------------------------------------------
 #### draw.io link -> https://drive.google.com/file/d/14BIMldLk9kyLlduhX1duwbqXwSw-P1QA/view?usp=sharing
 -----------------------------------------------
-#### Wallet Microserivce
+#### Wallet Microserivce -p 8000
 -----------------------------------------------
 
 ##### User register Post(/api/v1/users/register)
@@ -29,5 +29,17 @@
 ```
 
 ##### Wallet login Get(/api/v1/wallet/{userId})
+```
+```
+
+##### Transaction cash In Post(/api/v1/transaction/cashin/{walletId}?amount={amount})
+```
+```
+
+##### Transaction cash Out Post(/api/v1/transaction/cashout/{walletId}?amount={amount})
+```
+```
+
+##### Transaction Transaction History of A Wallet Get(/api/v1/transaction/{walletId})
 ```
 ```
