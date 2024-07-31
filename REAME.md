@@ -43,3 +43,23 @@
 ##### Transaction Transaction History of A Wallet Get(/api/v1/transaction/{walletId})
 ```
 ```
+-----------------------------------------------
+#### Shop Microserivce -p 8001
+-----------------------------------------------
+##### Product creation Post(/api/v1/products/create)
+```
+{
+    "name": "randomName",
+    "description":"randomDes",
+    "price": 50
+}
+```
+
+##### Get all products Get(/api/v1/products)
+```
+```
+
+##### Get one product Get(/api/v1/products/{id})
+```
+```
+
