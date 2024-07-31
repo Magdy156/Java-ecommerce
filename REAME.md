@@ -63,3 +63,17 @@
 ```
 ```
 
+##### Create Cart Post(/api/v1/cart/create/{userId})
+```
+```
+
+##### add item to Cart Post(/api/v1/cart/{userId}/add?productId={productId}&quntity={quantity})
+```
+```
+##### show Cart contents Get(/api/v1/cart/{userId})
+```
+```
+
+##### clear Cart contents Delete(/api/v1/cart/{userId}/clear)
+```
+```
