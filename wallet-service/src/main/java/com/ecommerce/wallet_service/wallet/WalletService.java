@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.ecommerce.wallet_service.user.User;
 import com.ecommerce.wallet_service.user.UserRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class WalletService {
     
@@ -30,5 +32,19 @@ public class WalletService {
 
     public List<Wallet> getWallet(Long userId){
         return walletRepository.findByUserId(userId);
+    }
+
+    @Transactional
+    public boolean deduct(Long userId, Long walletId,BigDecimal amount) {
+        Wallet wallet = walletRepository.findByUserIdAndId(userId, walletId)
+                .orElseThrow(() -> new RuntimeException("Wallet not found for user"));
+
+        if (wallet.getBalance().compareTo(amount) >= 0) {
+            wallet.setBalance(wallet.getBalance().subtract(amount));
+            walletRepository.save(wallet);
+            return true;
+        } else {
+            return false;
+        }
     }
 }

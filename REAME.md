@@ -28,7 +28,7 @@
 ```
 ```
 
-##### Wallet login Get(/api/v1/wallet/{userId})
+##### Wallet get Get(/api/v1/wallet/{userId})
 ```
 ```
 
@@ -67,7 +67,7 @@
 ```
 ```
 
-##### add item to Cart Post(/api/v1/cart/{userId}/add?productId={productId}&quntity={quantity})
+##### add item to Cart Post(/api/v1/cart/{userId}/add?productId={productId}&quantity={quantity})
 ```
 ```
 ##### show Cart contents Get(/api/v1/cart/{userId})
@@ -77,3 +77,16 @@
 ##### clear Cart contents Delete(/api/v1/cart/{userId}/clear)
 ```
 ```
+##### create Order Post(/api/v1/orders/create/{userId}/{walletId})
+```
+```
+##### get Order by userId Get(/api/v1/orders/user/{userId})
+```
+```
+##### get Order by id Get(/api/v1/orders/{orderId})
+```
+```
+##### updated Order Status Put(/api/v1/orders/{orderId}/status?status={status})
+```
+```
+
