@@ -90,3 +90,25 @@
 ```
 ```
 
+-----------------------------------------------
+#### Inventory Microserivce -p 8002
+-----------------------------------------------
+
+##### create Inventory  Post(/api/v1/inventory/create)
+```
+{
+    "productId": randomPrductId(Long),
+    "quantity": randomQuantity(int)
+}
+```
+##### get Inventory  by productId Get(/api/v1/inventory/product/{productId})
+```
+```
+
+##### update Inventory by productId Put(/api/v1/inventory/product/{productId}?quantity={quantity})
+```
+```
+
+##### delete Inventory by id Delete(/api/v1/inventory/{id})
+```
+```
